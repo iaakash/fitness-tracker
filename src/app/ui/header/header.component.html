@@ -1,0 +1,13 @@
+<mat-toolbar color="tomato">
+    <div fxHide.gt-xs><button mat-icon-button (click)="toggleSideNav()">  
+        <mat-icon>menu</mat-icon> 
+    </button> </div>
+    <div> logo </div>
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs> 
+        <ul fxLayout fxLayoutGap="10px">
+            <li><a href="">Signin</a> </li>
+            <li><a href="">Signup</a> </li>
+            <li><a [routerLink]="['/training']" routerLinkActive="active" >Training</a> </li>
+        </ul>
+     </div>
+</mat-toolbar>

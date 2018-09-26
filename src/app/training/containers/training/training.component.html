@@ -1,0 +1,5 @@
+<mat-tab-group *ngIf="isOnGoingTraining">
+    <mat-tab label="Past"> <app-past-training></app-past-training> </mat-tab>
+    <mat-tab label="Upcoming"> <app-upcoming-training (trainingStart)="onTrainingStart()"></app-upcoming-training> </mat-tab>  
+  </mat-tab-group>
+  <app-current-training *ngIf="!isOnGoingTraining"></app-current-training> 
